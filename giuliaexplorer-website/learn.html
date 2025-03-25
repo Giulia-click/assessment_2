@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Italian with Giulia - Giulia Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Giulia Explorer</a>
+        <nav>            
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">🔍</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Learn intro section-->
+        <section class="learn-intro container">
+            <h1>Learn Italian with Giulia</h1>
+            <p>
+                Ready to start speaking Italian? Whether you’re just beginning or want to improve, you’ll find lessons here that are fun, practical, and designed to teach you the real Italian we speak every day.
+            </p>
+            <button class="cta-button">Let's Get Started!</button>
+        </section>
+    
+
+    <!--Categories dropdown menu-->
+    <section class="category-menu container">
+        <button id="category-btn" class="cta-button">Categories</button>
+        <div id="category-list" class="category-list">
+            <ul>
+                <li data-category="how-to">How to...</li>                
+                <li data-category="italian-grammar">Italian Grammar</li>
+                <li data-category="italian-holidays">Italian Holidays</li>
+                <li data-category="italian-sayings">Italian Sayings</li>
+                <li data-category="vocabulary">Vocabulary</li>
+                <li data-category="all">All Categories</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Categories sections-->
+    <!--How to section-->
+    <section class="category-section container" data-category="how-to">
+        <h2>How to...</h2>
+        <div class="video-slider">
+            <div class="slider" id="slider-how-to">
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/DuUV2fctuyY?feature=shared" allowfullscreen></iframe> <!--How to start a conversation-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/OV_2UxYTiA8?feature=shared" allowfullscreen></iframe> <!--5 ways to say you're crazy-->
+                </div>
+            </div>
+            <button class="slider-btn prev" data-slider="slider-how-to"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" data-slider="slider-how-to"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!--Italian grammar section-->
+    <section class="category-section container" data-category="italian-grammar">
+        <h2>Italian Grammar</h2>
+        <div class="video-slider">
+            <div class="slider" id="slider-italian-grammar">
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/tHKDbP-pNIo?feature=shared" allowfullscreen></iframe> <!--Verb to be-->
+                </div>
+            <div class="video-item">
+                <iframe src="https://youtube.com/embed/KpVTIDLCUiU?feature=shared" allowfullscreen></iframe> <!--Subject pronouns-->
+            </div>
+            <div class="video-item">
+                <iframe src="https://youtube.com/embed/i0M0a2QMBho?feature=shared" allowfullscreen></iframe> <!--Feminine or masculine-->
+            </div>
+            </div>
+            <button class="slider-btn prev" data-slider="slider-italian-grammar"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" data-slider="slider-italian-grammar"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!--Italian holidays section-->
+    <section class="category-section container" data-category="italian-holidays">
+        <h2>Italian Holidays</h2>
+        <div class="video-slider">
+            <div class="slider" id="slider-italian-holidays">
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/cFhXx34iv0s?feature=shared" allowfullscreen></iframe> <!--italian phrase of valentine's day-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/dEBviuDHj70?feature=shared" allowfullscreen></iframe> <!--Epifania-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/_QtyEvJflM4?feature=shared" allowfullscreen></iframe> <!--Merry Christmas-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/MzKK7OCddO0?si=PPeJm2POgDjGOMWY" allowfullscreen></iframe> <!--Christmas words-->
+                </div>
+            </div>
+            <button class="slider-btn prev" data-slider="slider-italian-holidays"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" data-slider="slider-italian-holidays"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!--Italian sayings section-->
+    <section class="category-section container" data-category="italian-sayings">
+        <h2>Italian Sayings</h2>
+        <div class="video-slider">
+            <div class="slider" id="slider-italian-sayings">
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/VOxq2DWNSvs?si=SnIhnsg87TWkhhhg" allowfullscreen></iframe> <!--Si chiama Pietro-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/KOR471IPA5w?si=E3IgIS5aK2tY516J" allowfullscreen></iframe> <!--Sei bello ma non trasparente-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/K-PN5fu5jKo?si=wt1Kz4mjT77y0J8F" allowfullscreen></iframe> <!--Easier said than done-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/MWPXlI9A8nQ?si=svDx48c_yCxSp-_q" allowfullscreen></iframe> <!--Better late than never-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/wTIzaOTxSoM?si=isvLrADpemhTiBxi" allowfullscreen></iframe> <!--Saying and doing-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/yd9foS0RW24?si=FosU52bNWY91uP-Z" allowfullscreen></iframe> <!--One thing leads to another-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/LFruJm5N9yk?si=wlwSfQ6l-U2NT5Oa" allowfullscreen></iframe> <!--Out of sight out of mind-->
+                </div>
+            </div>
+            <button class="slider-btn prev" data-slider="slider-italian-sayings"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" data-slider="slider-italian-sayings"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!--Vocabulary section-->
+    <section class="category-section container" data-category="vocabulary">
+        <h2>Vocabulary</h2>
+        <div class="video-slider">
+            <div class="slider" id="slider-vocabulary">
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/rgN5JAe1Edc?si=fxc_uTvVD2bjG0_C" allowfullscreen></iframe> <!--Where is the bathroom-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/Y0C8penSXDM?si=w9LvRf-uxs0L9G-R" allowfullscreen></iframe> <!--Basta-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/j_4U6fhceQQ?si=8KzQL9hpg0tRRQXZ" allowfullscreen></iframe> <!--Raffreddore-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/ZfzEYcO4Wsc?si=OHT-mxQyW33fep2i" allowfullscreen></iframe> <!--Tastes-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/-_3muBZ5XfE?si=3RtHZLSuiL0_1JHP" allowfullscreen></iframe> <!--Parts of the day-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/OmEbxN1mOJo?si=qIMUbnFDg6X5aDJf" allowfullscreen></iframe> <!--Fingers-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/jZlFqvgNJZE?si=CZQ142LOL0bjdQ_J" allowfullscreen></iframe> <!--Months-->
+                </div>
+                <div class="video-item">
+                    <iframe src="https://youtube.com/embed/PQnmlu6GbXc?si=ntriXQ53_j1iTtEq" allowfullscreen></iframe> <!--Silverware-->
+                </div>
+            </div>
+            <button class="slider-btn prev" data-slider="slider-vocabulary"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" data-slider="slider-vocabulary"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+        
+
+</main>
+
+
+    <footer>
+        <div class="footer-nav">
+            <a href="learn.html">Learn</a> |
+            <a href="about.html">About</a> |
+            <a href="index.html">Home</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social">
+            <a href="https://instagram.com/giuliaexplorer" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/giuliaexplorer" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/giuliaexplorer" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://facebook.com/giuliaexplorer" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Giuliaexplorer. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
