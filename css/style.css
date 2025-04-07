@@ -815,3 +815,67 @@ footer {
 .social a:hover {
     color: #b00c27;
 }
+
+/*Adjustments for mobile versions*/
+@media (max-width: 768px) {
+    /*Header adjustments*/
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /*Hero section adjustments*/
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /*Container padding adjustments*/
+    .container {
+        padding: 0 10px;
+    }
+
+    /*Article section adjustments*/
+    .article-section {
+        flex-direction: column !important;
+        margin: 20px 0;
+    }
+
+    .section-text,
+    .section-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-image {
+        margin: 20px auto;
+    }
+
+    /*back to blog button adjustments*/
+    .back-to-blog {
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /*Footer adjustments*/
+    .social a {
+        font-size: 1.3rem;
+        margin: 0 5px;
+    }
+}
